@@ -1,7 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-let port = process.env.PORT || 5000
+let port = process.env.PORT || 3000
+const cors = require('cors')
 
 
 // Route imports
@@ -12,7 +13,7 @@ const charactersRoutes = require('./routes/characters')
   // Applied to all requests
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-
+app.use(cors())
 
 // Basic GET route that responds with emoji or something
   // Lets us know the server is working
@@ -50,4 +51,4 @@ function errorHandler(err, req, res, next) {
 }
 
 
-app.listen(port, () => console.log(`Server running on port 3000`))
+app.listen(port, () => console.log(`Server running on ${port}`))

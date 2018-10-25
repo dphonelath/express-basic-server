@@ -28,3 +28,6 @@
 * [Dan Levy - Express Guides](https://github.com/justsml/guides/blob/master/express/setup-guide/app.js)
 * [Learn - Express Middleware](https://learn-2.galvanize.com/cohorts/757/blocks/29/content_files/Server%20Development/06-libraries.md)
 * [Learn - Error Handling](https://learn-2.galvanize.com/cohorts/757/blocks/29/content_files/Server%20Development/07-errors.md)
+
+#notes
+
